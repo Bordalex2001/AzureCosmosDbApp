@@ -1,0 +1,60 @@
+@AzureCosmosDbApp_HostAddress = https://localhost:7130
+
+GET {{AzureCosmosDbApp_HostAddress}}/api/Products
+Content-Type: application/json
+
+###
+
+GET {{AzureCosmosDbApp_HostAddress}}/api/Products/70bc8086-a4a4-459a-a2f7-5a0400332383
+Content-Type: application/json
+
+###
+
+POST {{AzureCosmosDbApp_HostAddress}}/api/Products
+Content-Type: application/json
+{
+    "name": "iPhone 15",
+    "price": 1099.99
+}
+
+###
+
+POST {{AzureCosmosDbApp_HostAddress}}/api/Products
+Content-Type: application/json
+{
+    "name": "Samsung Galaxy S23",
+    "price": 999.99
+}
+
+###
+
+POST {{AzureCosmosDbApp_HostAddress}}/api/Products
+Content-Type: application/json
+{
+    "name": "MacBook Air M3",
+    "price": 1299.99
+}
+
+###
+
+PUT {{AzureCosmosDbApp_HostAddress}}/api/Products/26e7def8-a881-4b71-ae10-abc8b47c8ef1
+Content-Type: application/json
+{
+    "id": "26e7def8-a881-4b71-ae10-abc8b47c8ef1",
+    "name": "iPhone 15 Pro",
+    "price": 1199.99
+}
+
+###
+
+PUT {{AzureCosmosDbApp_HostAddress}}/api/Products/a0dbdabe-0fed-41d1-b380-0fcc395a1f43
+Content-Type: application/json
+{
+    "id": "a0dbdabe-0fed-41d1-b380-0fcc395a1f43",
+    "name": "MacBook Air M3",
+    "price": 1499.99
+}
+
+###
+
+DELETE {{AzureCosmosDbApp_HostAddress}}/api/Products/26e7def8-a881-4b71-ae10-abc8b47c8ef1
